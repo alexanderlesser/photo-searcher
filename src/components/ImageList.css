@@ -1,0 +1,26 @@
+body {
+  background-color: azure;
+}
+
+.image-container {
+  align-items: center;
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 10px; /* 2 values y and x axis. y is first */
+  grid-auto-rows: 10px;
+  align-items: center;
+}
+
+.image-list img {
+  width: 250px;
+}
+
+@media (max-width: 554px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+}
